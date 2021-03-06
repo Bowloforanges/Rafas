@@ -1,0 +1,605 @@
+:root {
+    --jet: #2F2F2F;
+    --grullo: #A49E8D;
+    --polished-pine: #689689;
+    --magic-mint: #B2E6D4;
+    --medium-aquamarine: #83E8BA;
+    --highlight-gray: #e8e8e8;
+}
+
+body {
+    background-color: var(--jet);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: #FFF;
+    background-color: transparent !important;
+}
+
+a:focus {
+    color: #FFF;
+}
+
+a:hover {
+    color: var(--medium-aquamarine) !important;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 54px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav-links {
+    margin: 10px 5%; 
+}
+
+.nav {
+    list-style-type: none;
+
+}
+
+.nav li {
+    display: inline-block;
+    color: #FFF;
+    margin: auto;
+    height: 100%;
+}
+
+.nav li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.navbar-brand {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    margin-right: 5em;
+    font-size: 30px;
+}
+
+.navbar-brand:hover {
+    color: #FFF;
+}
+
+.navbar {
+    padding-left: 100px;
+    margin-top: 20px;
+}
+
+.content {
+    height: 2000px;
+    background-color: transparent;
+}
+
+.header-container {
+
+    width: 80%;
+    margin: auto;
+    color: #FFF;
+    margin-top: 5em;
+}
+
+.magnitude-board {
+    color: var(--jet);
+    width: 70%;
+    height: 5em;
+    font-weight: 300;
+    margin-left: 0;
+    margin-top: 2em;
+}
+
+.magnitude {
+    margin: auto;
+    padding: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    width: 30%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.mag-text {
+    display: inline-block;
+    color: #000;
+    width: 85%;
+    margin-top: 0.8em;
+    padding-left: 1em;
+}
+
+.mag-img {
+    width: 15%;
+    display: inline-block;
+    float: right;
+}
+
+.mag-img img {
+    border-radius: 100%;
+}
+
+.mag-left {
+    margin-right: 5%;
+}
+
+.mag-right {
+    margin-left: 5%;
+}
+
+.historical-data {
+
+    width: 80%;
+    margin: auto;
+    color: #FFF;
+    margin-top: 5em;
+}
+
+.buttongroups {
+    font-family: 'Roboto', sans-serif;
+    width: 70%
+}
+
+.historical-data-buttongroups {
+   padding-left: 0px; 
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.dropdown-customize {
+    border-color: transparent;
+    font-weight: 300;
+}
+
+.btn-default {
+    border-color: transparent;
+    font-weight: 300;
+}
+
+.btn-default:hover {
+    border-color: transparent;
+    background-color: var(--highlight-gray);
+}
+
+.dropdown-li {
+    background-color: #FFF;
+}
+
+.dropdown-li:hover {
+    background-color: var(--highlight-gray);
+}
+
+.main-content-container {
+    margin-top: 2em;
+    padding: 0 10%;
+    margin-bottom: 200px;
+}
+.right-side-content {
+    height: 500px;
+    margin-left: 15px;
+    padding: 0.5em 2em 0 2em;
+    border-radius: 10px;
+    width: 69%;
+    background-color: #FFF;
+    display: inline-block;
+    float: left;
+}
+
+.table-wrapper {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    display: none;  /*hides scrollbar*/
+}
+
+.harvest-date {
+    width: 60%;
+    display: inline-block;
+    float: left;
+}
+
+.edit-button {
+    width: 40%;
+    display: inline-block;
+    float: left;
+}
+
+.datepicker-container{
+    padding-right: 1em;
+    padding-left: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.datepicker-bottom {
+    margin-top: 0.25em;
+}
+
+.col-form-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.form-control:focus {
+    border-color: var(--medium-aquamarine);
+    box-shadow: none;
+}
+
+.new-entry-form {
+    margin-top: 2em;
+    margin-left: calc(10% + 15px);
+    padding: 0;
+    width: 25%;
+    margin-bottom: 200px;
+}
+
+.record-label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.record-input {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.record-submit {
+    display: inline-block;
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2em;
+}
+
+.left-side-container {
+    height: 500px;
+    width: 19%;
+    display: inline-block;
+    float: right;
+}
+
+.left-side-primary {
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 100%;
+    height: 44%;
+}
+
+.left-side-secondary {
+    background-color: #FFF;
+    border-radius: 10px;
+    margin-top: 15%;
+    width: 100%;
+    height: 48.5%;
+}
+
+.left-side-container-title {
+    border-radius: 10px 10px 0 0;
+    background-color: #FFF;
+    height: 3.5em;
+    width: auto;
+    padding: 1em 1.5em;
+
+}
+
+.left-side-container-title p {
+    color: var(--magic-mint);
+    font-family: 'Rubik', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: left;
+    
+}
+
+.left-side-container-content {
+    padding: 2em 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: var(--jet);
+    font-family: 18px;
+    line-height: 1.25;
+}
+
+.summary-table {
+    table-layout: auto;
+    width: 100%;
+}
+
+.context {
+    color: var(--jet);
+    font-weight: 400;
+}
+
+.boldify {
+    font-weight: 600;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+.settings-main-content {
+    padding:  2em 0;
+}
+
+.settings-row {
+    margin: 2em 1em 7em 0em;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+
+.settings-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.settings-content {
+    margin-top: 1em;
+}
+
+.settings-btn {
+    background-color: var(--polished-pine);
+    color: #FFF;
+}
+
+.settings-btn:hover {
+    background-color: var(--magic-mint);
+    color: #FFF;
+}
+
+.settings-left-side {
+    width: 45%;
+    height: 100%;
+    padding-left: 2em;
+    display: inline-block;
+    float: left;
+}
+
+.settings-right-side {
+    width: 45%;
+    height: 100%;
+    padding-left: 2em;
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+.date-display {
+    font-size: 16px;
+}
+
+.hour-display {
+    font-size: 24px;
+}
+
+.sensor-display {
+    font-size: 14px;
+}
+
+.tomato-waifu {
+    width: 250px;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+}
+
+/*
+
+
+
+SWITCH
+
+
+
+*/
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--medium-aquamarine);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #34ca66;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*
+
+
+
+SWITCH END
+
+
+
+*/
+
+.popup {
+    position: absolute;
+    z-index: 100;
+    margin-left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(47, 47, 47, 0.5);
+    color: #FFF;
+
+}
+
+.popup-title {
+    margin: 1em 0;
+}
+
+.popup-title p {
+    color: var(--magic-mint);
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.popup-text label{
+    color: var(--jet);
+}
+
+.popup-buttons {
+    position: absolute;
+    width: 90%;
+    bottom: 1.5em;
+}
+
+.popup-btn-left {
+    width: 40%;
+    float: left;    
+}
+
+.popup-btn-right {
+    width: 40%;
+    float: right;   
+    text-align: right; 
+}
+
+.margin-confirmation {
+    margin-top: 1000px;
+}
+
+.margin-edit {
+    margin-top: 0;
+}
+
+.popup-inner-parent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.popup-inner-child {
+    position: absolute;
+    width: 30%;
+    padding: 0 2em;
+    left: 35%;
+    background-color: #FFF;
+    border-radius: 10px;
+    color: var(--jet);
+}
+
+.confirmation-popup-wrapper {
+    top: 30%;
+    height: 250px;
+}
+
+.edit-entry-popup-wrapper {
+    top: 20%;
+    height: 600px;
+}
+
+.footer {
+    height: 200px;
+    padding-top: 80px;
+    background-color: var(--polished-pine);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.version {
+    font-weight: 200px;
+    font-size: 12px;
+    font-style: italic;
+    color: #FFF;
+}
+
+
+/*
+
+font-family: 'Oleo Script Swash Caps', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+PALETTE:
+
+White:      #FFFFFF
+Fire Opal:  #e3655b
+Jet:        #2F2F2F
+Xanadu:     #708D81
+Artichoke:  #878E76
+
+alternative palette
+
+Jet:                #2F2F2F
+Grullo:             #A49E8D
+Polished Pine:      #689689
+Magic Mint:         #B2E6D4
+Medium Aquamarine   #83E8BA
+*/
