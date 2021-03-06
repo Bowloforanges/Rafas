@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="sensors-section" id="sensors-section">
+    <div class="header-container container">
+    <h1>Last reading</h1>
+    <h3>20/04/2021 - 19:20</h3>
+    <div class="row magnitude-board">
+        <div class="col-md-4 magnitude mag-left">
+        <div class="mag-text"><p>Temperature is 19 °C high</p></div>
+        <div class="mag-img">
+            <img src="{% static 'assets/thermo-alt.png' %}" alt="" id="temperature-img" /> <!-- https://drive.google.com/uc?export=view&id=1Z5VOsGf_oRJrIg_aan0BWORLWVMe1y0J -->
+        </div>
+        </div>
+        <div class="col-md-4 magnitude mag-mid">
+        <div class="mag-text"><p>Relative humidity is 23%</p></div>
+        <div class="mag-img">
+            <img src="{% static 'assets/moist-alt.png' %}" alt="" id="rel-hum-img" /> <!-- https://drive.google.com/uc?export=view&id=10jIVsG4zZQdssWtOgjXQCZVEpaJ_cW9x -->
+        </div>
+        </div>
+        <div class="col-md-4 magnitude mag-right">
+        <div class="mag-text"><p>Soil moisture is about 36%</p></div>
+        <div class="mag-img">
+            <img src="{% static 'assets/soil-alt.png' %}" alt="" id="soil-moist-img" /> <!-- https://drive.google.com/uc?export=view&id=1FgwYxddOLzl2sej5Tb49anLBHxh8kghg -->
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="historical-data container">
+    <h1>Historical data</h1>
+    <div class="buttongroups">
+        <div class="row historical-data-buttongroups">
+        <!-- Large button group -->
+        <div class="col-md-2 btn-group">
+            <button
+            class="btn btn-default btn-lg dropdown-toggle font-roboto dropdown-customize"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >
+            Interval <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu font-roboto dropdown-customize">
+            <li class="dropdown-li"><a href="#">Last 24 hours</a></li>
+            <li class="dropdown-li"><a href="#">Last 7 days</a></li>
+            <li class="dropdown-li"><a href="#">Last month</a></li>
+            </ul>
+        </div>
+
+        <div
+            class="col-md-10 btn-group btn-group-lg font-roboto dropdown-customize"
+            role="group"
+            aria-label="..."
+        >
+            <button type="button" class="btn btn-default">Temperature</button>
+            <button type="button" class="btn btn-default">
+            Relative humidity
+            </button>
+            <button type="button" class="btn btn-default">
+            Soil Moisture
+            </button>
+            <button type="button" class="btn btn-default">Water Usage</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="main-content-container container-fluid">
+    <div class="right-side-content"></div>
+
+    <div class="left-side-container">
+        <div class="left-side-primary">
+        <div class="left-side-container-title">
+            <p>Summary</p>
+        </div>
+        <div class="left-side-container-content">
+            <table class="summary-table">
+            <tr>
+                <td><p>Average temperature is</p></td>
+                <td class="boldify right-aligned">-- °C</td>
+            </tr>
+            <tr>
+                <td><p>Average r. humidity is</p></td>
+                <td class="boldify right-aligned">-- %</td>
+            </tr>
+            <tr>
+                <td><p>Average soil moisture is</p></td>
+                <td class="boldify right-aligned">-- %</td>
+            </tr>
+            <tr>
+                <td><p>Average water usage is</p></td>
+                <td class="boldify right-aligned">-- L/h</td>
+            </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock content %}

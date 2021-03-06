@@ -1,4 +1,6 @@
 
+
+    
 """Rafas URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -20,6 +22,7 @@ from django.views.generic import TemplateView
 from django.urls.conf import include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include(('RafasApp.urls', 'rafas-app'), namespace='rafas-app')),
+    path('', TemplateView.as_view(template_name='sensors.html'), name='sensors'),
+    path('harvest', TemplateView.as_view(template_name='harvest.html'), name='harvest'),
+    path('settings', TemplateView.as_view(template_name='settings.html'), name='settings'),
 ]

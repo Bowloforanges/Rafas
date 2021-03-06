@@ -1,0 +1,212 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="harvest-section" id="harvest-section">
+    <div class="header-container container">
+    <h1>Harvest data</h1>
+    <h3>All time</h3>
+    </div>
+
+    <div class="main-content-container container-fluid">
+    <div class="right-side-content">
+        <div class="table-wrapper">
+        <table class="table table-responsive">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Width</th>
+                <th scope="col">Lenght</th>
+                <th scope="col">Height</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Date of harvest</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>7.5</td>
+                <td>7</td>
+                <td>5</td>
+                <td>155</td>
+                <td>
+                <div class="harvest-date"><p>26/08/2020</p></div>
+                <div class="edit-button">
+                    <input
+                    type="button"
+                    class="btn settings-btn"
+                    value="Edit"
+                    onclick="toggleEditEntryPopup(false)"
+                    />
+                </div>
+                </td>
+            </tr>
+            <tr></tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="left-side-container">
+        <div class="left-side-primary">
+        <div class="left-side-container-title">
+            <p>Time period</p>
+            <div class="form-group row datepicker-container datepicker-top">
+            <label for="example-date-input" class="col-2 col-form-label"
+                >From:</label
+            >
+            <div class="col-10 custom-datepicker-top">
+                <input
+                class="form-control"
+                type="date"
+                value="2021-01-01"
+                id="example-date-input"
+                />
+            </div>
+            </div>
+            <div
+            class="form-group row datepicker-container datepicker-bottom"
+            >
+            <label for="example-date-input" class="col-2 col-form-label"
+                >To:</label
+            >
+            <div class="col-10 custom-datepicker-bottom">
+                <input
+                class="form-control"
+                type="date"
+                value="2021-01-01"
+                id="example-date-input"
+                />
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="left-side-secondary">
+        <div class="left-side-container-title">
+            <p>Summary</p>
+        </div>
+        <div class="left-side-container-content">
+            <table class="summary-table">
+            <tr>
+                <td><p>Average width is</p></td>
+                <td class="boldify right-aligned">-- cm</td>
+            </tr>
+            <tr>
+                <td><p>Average length is</p></td>
+                <td class="boldify right-aligned">-- cm</td>
+            </tr>
+            <tr>
+                <td><p>Average height is</p></td>
+                <td class="boldify right-aligned">-- cm</td>
+            </tr>
+            <tr>
+                <td><p>Average weight is</p></td>
+                <td class="boldify right-aligned">-- g</td>
+            </tr>
+
+            <tr>
+                <td><p>Total weight is</p></td>
+                <td class="boldify right-aligned">-- kg</td>
+            </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="header-container container">
+    <h1>Add a new record</h1>
+    <h3></h3>
+    </div>
+
+    <div class="new-entry-form container">
+    <form action="">
+        <div class="row">
+        <div class="col-md-6">
+            <div class="record-label">
+            <label class="record-label" for="">Tomato #</label>
+            </div>
+            <div class="record-input">
+            <input class="form-control" type="text" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="record-label">
+            <label class="record-label" for="">Width</label>
+            </div>
+            <div class="record-input">
+            <input class="form-control" type="text" />
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6">
+            <div class="record-label">
+            <label class="record-label" for="">Lenght</label>
+            </div>
+            <div class="record-input">
+            <input class="form-control" type="text" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="record-label">
+            <label class="record-label" for="">Height</label>
+            </div>
+            <div class="record-input">
+            <input class="form-control" type="text" />
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6">
+            <div class="record-label">
+            <label class="record-label" for="">Weight</label>
+            </div>
+            <div class="record-input">
+            <input class="form-control" type="text" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="record-label">
+            <label class="record-label" for="">Harvest date</label>
+            </div>
+            <div class="record-input">
+            <input
+                class="form-control"
+                type="date"
+                value="2021-01-01"
+                id="example-date-input"
+            />
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-12">
+            <div class="record-label">
+            <label class="record-label" for="">File name</label>
+            </div>
+            <div class="record-input">
+            <input class="form-control" type="text" />
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-12">
+            <div class="record-submit">
+            <input
+                type="submit"
+                onclick="toggleConfirmationPopup(false)"
+                class="btn settings-btn"
+                value="Save"
+            />
+            </div>
+        </div>
+        </div>
+    </form>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafas</title>
+
+    {% include 'snippets/css.html' %}
+    <!--<link rel='stylesheet' href='https://drive.google.com/uc?export=view&id=12L8mA0oO4RaPncnD_mL_zS0MsqZbsIlw' />-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+  </head>
+
+  <body>
+
+    {% include 'snippets/navbar.html' %}
+
+    {% include 'snippets/edit-popup.html' %}
+
+    {% include 'snippets/confirmation-popup.html' %}
+
+    {% block content %}
+
+    
+
+    {% endblock content %}
+
+    {% include 'snippets/footer.html' %}
+    
+    {% include 'snippets/js.html' %}
+
+  </body>
+</html>
